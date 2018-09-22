@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Oculus Go Home Environment :: Lo-Fi Prototype showing Notifications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- ***** SKY ***** -->
+            <img id="sky" src="img/vr-prototyping-template_3600x1800.png">
+            <!--<img id="sky" src="img/OculusGo-HomeEnv-Notifications-lofi.png">-->
+        </a-assets>
+
+        <!-- ***** SKY ***** -->
+        <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+
+        <!-- ***** NOTIFICATIONS CONTENT ***** -->
+        <a-text value="Notifications" text="anchor:center; color:#000000; opacity:0.75; align:center; baseline:bottom; width: 5.2; shader: msdf; font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/roboto/Roboto-Bold.json" position="0 4.0 -9"></a-text>
+        <!--<a-text value="Notifications" text="anchor:center; color:#000000; opacity:0.75; align:center; baseline:bottom; width: 5.2" position="0 4.10 -9"></a-text>-->
+        <a-curvedimage radius="9" material="color:#000000; opacity:0.75; side:back" geometry="height:4.5; openEnded:true; thetaLength:61; thetaStart:149.5" position="0 1.7 0">
+            <a-text value="Notifications Content" text="anchor:center; color:#FFFFFF; opacity:0.75; align:center; baseline:center; width:12.5" position="0 0 -8.6"></a-text>
+        </a-curvedimage>
+
+        <!-- ***** UNIVERSAL MENU ***** -->
+        <a-image material="color:#000000; opacity:0.75" geometry="height:0.65; width:3.25" position="0 -0.2 -2.5" rotation="-33.75 0 0">
+            <a-text value="Universal Menu" text="anchor:center; color:#FFFFFF; opacity:0.75; align:center; baseline:center; width:5.75" position="0 0 0"></a-text>
+        </a-image>
+    </a-scene>
+</body>
+</html>

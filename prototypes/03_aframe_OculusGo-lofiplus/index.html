@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Oculus Go Home Environment :: Lo-Fi-Plus Prototype showing Notifications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- ***** SKY ***** -->
+            <!--Detailed CC BY 2.0 Atrribution information for the "sky" image "27416636695_d4096b1c20_o.jpg"
+            Author/Photographer: Kereplaz
+            Copyright: Some Rights Reserved
+            Title: pusiasalio lauks (1)
+            URI: https://www.flickr.com/photos/kereplaz/27416636695/in/photolist-HGf4Ko-JvByoP-JCq82F-Jzpke7-JvzX3R-JtqaV7-HH1LSm-HNVPQm-HLHCMD-HS4qXf-G1uYtQ-HC4Dbf-HGdkYE-JvxuoH-JCpptF-JCotcV-JvyCN6-JvyMAM-JtoHd1-HGbMkz-HGaDz6-KwtLkg-KtZmxq-KtZiMf-JfgCj5-JoC29E-NRxAoR-H8VLhL-MBAakq-M76TRJ-M76U6w-N1HWdf-HKH6JJ-HmBxxm-HM1fPg-GHp3PQ-GF6xk4-GR5CgP-HmmkZm-H21pkf-GR5AGX-GR5Bp8-HLHqUF-HHJBcS-H6kiP7-H6jEt5-JKkhi5-HS4roL-FFiCzg-HLHus2
+            Modifications: none
+            License: https://creativecommons.org/licenses/by/2.0/legalcode     -->
+            <img id="sky" src="img/27416636695_d4096b1c20_o-3600w.jpg">
+            <!--<img id="sky" src="img/27416636695_d4096b1c20_o.jpg">-->
+            <!-- <img id="sky" src="img/vr-prototyping-template_3600x1800.png"> -->
+            <!-- <img id="sky" src="img/OculusGo-HomeEnv-Notifications-lofi.png"> -->
+            <!-- ***** NOTIFICATIONS CONTENT ***** -->
+            <img id="notifications-content" src="img/OculusGo-Content-Notifications-All.png">
+            <!-- ***** UNIVERSAL MENU ***** -->
+            <img id="universal-menu" src="img/OculusGo-UniversalMenu-Notifications-ViewAll.png">
+        </a-assets>
+
+        <!-- ***** SKY ***** -->
+        <a-sky src="#sky" rotation="0 -145 0"></a-sky>
+        <!--<a-sky src="#sky" rotation="0 -90 0"></a-sky>--> <!--for the other 2 posible "sky" options-->
+
+        <!-- ***** NOTIFICATIONS CONTENT ***** -->
+        <a-text value="Notifications" text="anchor:center; color:#FFFFFF; align:center; baseline:bottom; width: 5.2; shader: msdf; font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/roboto/Roboto-Bold.json" position="0 4.0 -9"></a-text>
+        <!--<a-text value="Notifications" text="anchor:center; color:#000000; opacity:0.75; align:center; baseline:bottom; width: 5.2" position="0 4.10 -9"></a-text>-->
+        <a-curvedimage radius="9" src="#notifications-content" material="side:back" geometry="height:4.5; openEnded:true; thetaLength:61; thetaStart:149.5" position="0 1.7 0"></a-curvedimage>
+
+        <!-- ***** UNIVERSAL MENU ***** -->
+        <a-image src="#universal-menu" geometry="height:0.65; width:3.25" position="0 -0.2 -2.5" rotation="-33.75 0 0"></a-image>
+    </a-scene>
+</body>
+</html>
