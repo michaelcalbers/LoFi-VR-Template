@@ -1,5 +1,7 @@
+![VR Prototyping Sketch Sheet](./templates/VRSketchSheet_3600px.png)
+
 # Templates
-Get the VR Sketch Sheet templates ([Sketch library](./templates/VRSketchSheets.sketch), [PNG](./templates/VRSketchSheet_3600px.png))
+Get the VR Prototyping Sketch Sheet template ([Sketch library](./templates/VRSketchSheets.sketch), [PNG](./templates/VRSketchSheet_3600px.png))
 
 # Prototypes
 View the Low-Fidelity Prototypes of the Oculus Go environment:
